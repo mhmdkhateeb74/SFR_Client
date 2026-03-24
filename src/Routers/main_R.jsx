@@ -1,14 +1,15 @@
 import React from "react";
 import {createBrowserRouter} from "react-router";
 import EmptyLayout from "../Layout/EmptyLayout";
-import HomePage from "../_Feature/homepage/homepage";
+import HomePage from "../_Feature/_/Homepage/homepage";
+import About from "../_Feature/_/About/About";
 
 const router = createBrowserRouter([
     {
         element:<EmptyLayout />,
         children:[
             {path:"/",         element:<HomePage />,     },
-            {path:"/home",     element:<HomePage />,     },
+            {path:"/about",     element:<About/>,     },
         ]
     },
 ]);
