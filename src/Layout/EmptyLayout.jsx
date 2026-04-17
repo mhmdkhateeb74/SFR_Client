@@ -1,10 +1,15 @@
 import React from 'react';
 import {Outlet} from "react-router";
+import {Link} from 'react-router-dom';
 
 function EmptyLayout(props) {
     return (
         <>
-            <h3>זה משהו שנראה בראש כל אחד מהעמודים</h3>
+            <nav>
+            <button><Link  to="/">Homepage</Link></button>
+            <button><Link  to="/about">About</Link></button>
+            <button> <Link  to="/language">Language</Link></button>
+            </nav>
             <Outlet />
         </>
     );

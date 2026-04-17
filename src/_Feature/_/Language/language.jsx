@@ -1,30 +1,31 @@
 import React from "react";
+import {Table, TableBody, TableCell, TableHead, TableRow, Typography} from "@mui/material";
 
 function Language(props){
 
     return (
         <>
-        return (
-    <table border="1">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Language</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        {props.Arry.map((item) => (
-          <tr key={item.id}>
-            <td>{item.id}</td>
-            <td>{item.name}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
+            <Typography variant="h2" sx={{ textAlign: 'center', mt: 2 }}>
+                שפות
+            </Typography>
+            <Table>
+                <TableHead>
+                <TableRow>
+                    <TableCell>מזהה</TableCell>
+                    <TableCell>שם</TableCell>
+                </TableRow>
+                </TableHead>
+                <TableBody>
+                {props.Arry.map((item)=>(
+                    <TableRow key={item.id}>
+                        <TableCell>{item.id}</TableCell>
+                        <TableCell>{item.name}</TableCell>
+                    </TableRow>
+                ))}
+                </TableBody>
+            </Table>
         </>
-      );
+    );
 }
 
 export default Language;
