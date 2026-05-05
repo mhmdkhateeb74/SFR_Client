@@ -12,9 +12,9 @@ import Level from "../_Feature/_/Levels/Levels";
 import StairsIcon from '@mui/icons-material/Stairs';
 
 const users = [
-    { id: 1, name: "Ahmad" },
-    { id: 2, name: "Mohammad" },
-    { id: 3, name: "Ali" }
+    { id: 1, name: "English" },
+    { id: 2, name: "Arabic" },
+    { id: 3, name: "Hebrew" }
   ];
 
 const router = createBrowserRouter([

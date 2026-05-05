@@ -35,6 +35,7 @@ const NavBar = ({ mobileOpen, onClose }) => {
                         component={NavLink}
                         to={item.path}
                         onClick={() => isMobile && onClose()}
+                        
                         sx={{
                             backgroundColor: isSelected ?
                                 theme.palette.nav.selected.background :
@@ -64,6 +65,7 @@ const NavBar = ({ mobileOpen, onClose }) => {
             </List>
         </Box>
     );
+
 
     return (
         <Box component="nav" sx={{ height: '100%' }}>
